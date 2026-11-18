@@ -1,0 +1,10 @@
+line-length = 79
+
+[lint]
+select = ["ALL"]
+ignore = [
+    "CPY",
+    "D100",
+    "D203",
+    "D213"
+]
