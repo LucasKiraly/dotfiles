@@ -19,11 +19,18 @@ dotfiles/
 Clone the repository and create symbolic links pointing to `~/.config`:
 
 ```bash
-git clone [https://github.com/LucasKiraly/dotfiles.git](https://github.com/LucasKiraly/dotfiles.git) ~/Documentos/repos/dotfiles # Clone dotfiles repository
+# Clone the dotfiles repository
+git clone [https://github.com/LucasKiraly/dotfiles.git](https://github.com/LucasKiraly/dotfiles.git) ~/Documentos/repos/dotfiles
 
-mkdir -p ~/.config/zed ~/.config/ruff # Ensure target config directories exist
+# Ensure target config directories exist
+mkdir -p ~/.config/zed ~/.config/ruff
 
-ln -sfn ~/Documentos/repos/dotfiles/config/zed/keymap.json ~/.config/zed/keymap.json # Link Zed keymap
-ln -sfn ~/Documentos/repos/dotfiles/config/zed/settings.json ~/.config/zed/settings.json # Link Zed settings
-ln -sfn ~/Documentos/repos/dotfiles/config/ruff/ruff.toml ~/.config/ruff/ruff.toml # Link Ruff config
+# Link Zed keymap
+ln -sfn ~/Documentos/repos/dotfiles/config/zed/keymap.json ~/.config/zed/keymap.json
+
+# Link Zed settings
+ln -sfn ~/Documentos/repos/dotfiles/config/zed/settings.json ~/.config/zed/settings.json
+
+# Link global Ruff config
+ln -sfn ~/Documentos/repos/dotfiles/config/ruff/ruff.toml ~/.config/ruff/ruff.toml
 ```
