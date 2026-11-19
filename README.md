@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal configuration files for the development environment, editors, and CLI tools.
+Personal development environment configurations for editors and command-line tools.
 
 ## Structure
 
@@ -8,29 +8,28 @@ Personal configuration files for the development environment, editors, and CLI t
 dotfiles/
 └── config/
     ├── ruff/
-    │   └── ruff.toml       # Ruff linter configuration
+    │   └── ruff.toml
     └── zed/
-        ├── keymap.json     # Custom keybindings
-        └── settings.json   # Editor preferences and UI setup
+        ├── keymap.json
+        └── settings.json
 ```
 
 ## Setup
 
-Clone the repository and create symbolic links pointing to `~/.config`:
+Clone the repository and create symbolic links to place the configuration files under `~/.config`:
 
 ```bash
-# Clone the dotfiles repository
-git clone [https://github.com/LucasKiraly/dotfiles.git](https://github.com/LucasKiraly/dotfiles.git) ~/Documentos/repos/dotfiles
+# Clone the repository
+git clone git@github.com:LucasKiraly/dotfiles.git
 
-# Ensure target config directories exist
+# Set repository path
+REPO_DIR="$PWD/dotfiles"
+
+# Create configuration directories
 mkdir -p ~/.config/zed ~/.config/ruff
 
-# Link Zed keymap
-ln -sfn ~/Documentos/repos/dotfiles/config/zed/keymap.json ~/.config/zed/keymap.json
-
-# Link Zed settings
-ln -sfn ~/Documentos/repos/dotfiles/config/zed/settings.json ~/.config/zed/settings.json
-
-# Link global Ruff config
-ln -sfn ~/Documentos/repos/dotfiles/config/ruff/ruff.toml ~/.config/ruff/ruff.toml
+# Link configuration files
+ln -sfn "$REPO_DIR/config/zed/keymap.json" ~/.config/zed/keymap.json
+ln -sfn "$REPO_DIR/config/zed/settings.json" ~/.config/zed/settings.json
+ln -sfn "$REPO_DIR/config/ruff/ruff.toml" ~/.config/ruff/ruff.toml
 ```
