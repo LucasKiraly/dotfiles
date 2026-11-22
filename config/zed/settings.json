@@ -1,92 +1,51 @@
 {
-  // --- Fonts & Typography ---
   "cli_default_open_behavior": "new_window",
-  "buffer_font_family": "JetBrains Mono",
-  "ui_font_family": "IBM Plex Sans",
-  "buffer_font_size": 26.0,
-  "ui_font_size": 21.0,
-  "buffer_font_weight": 400.0,
-  "ui_font_weight": 400.0,
-  "buffer_line_height": "comfortable",
-
-  // --- Appearance ---
-  "theme": "Catppuccin Mocha (Blur) [Heavy]",
-  "icon_theme": "Zed (Default)",
-
-  // --- Editor Layout ---
-  "max_tabs": 3,
-  "scrollbar": {
-    "show": "never"
+  "base_keymap": "Zed",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false,
+    "anthropic_retention": false
   },
+
+  "theme": "Catppuccin Mocha (Blur) [Heavy]",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 26.0,
+  "ui_font_family": "IBM Plex Sans",
+  "ui_font_size": 21.0,
+
+  "max_tabs": 3,
   "tab_bar": {
     "show": false,
     "show_nav_history_buttons": false
   },
   "toolbar": {
-    "breadcrumbs": true,
-    "quick_actions": false,
-    "selections_menu": true
+    "quick_actions": false
+  },
+  "scrollbar": {
+    "show": "never"
   },
 
-  // --- File Saving ---
   "autosave": "on_window_change",
-  "ensure_final_newline_on_save": true,
-  "remove_trailing_whitespace_on_save": true,
 
-  // --- Panels ---
   "project_panel": {
     "default_width": 320.0,
     "title_tooltip_delay": "default",
-    "hide_gitignore": false,
-    "entry_spacing": "comfortable",
-    "file_icons": true,
-    "git_status": true,
-    "folder_indicator": "icon",
-    "dock": "left"
+    "folder_indicator": "icon"
   },
   "terminal": {
-    "starts_open": true,
     "dock": "right",
     "default_width": 800.0,
     "font_size": 23.0
   },
 
-  // --- Python & PEP 8 ---
   "show_wrap_guides": false,
   "languages": {
     "Python": {
-      "preferred_line_length": 79,
-      "tab_size": 4,
-      "hard_tabs": false,
+      "language_servers": ["ty", "ruff"],
       "format_on_save": "off",
+      "preferred_line_length": 79,
       "show_wrap_guides": true,
-      "wrap_guides": [72, 79],
-      "language_servers": ["ty", "ruff"]
+      "wrap_guides": [72, 79]
     }
-  },
-
-  // --- Editor Guides & Completion ---
-  "completion_detail_alignment": "left",
-  "indent_guides": {
-    "line_width": 1
-  },
-  "gutter": {
-    "line_numbers": true
-  },
-  "which_key": {
-    "enabled": false,
-    "delay_ms": 1000
-  },
-
-  // --- General & Privacy ---
-  "base_keymap": "Zed",
-  "proxy": "",
-  "session": {
-    "trust_all_worktrees": false
-  },
-  "telemetry": {
-    "metrics": false,
-    "diagnostics": false,
-    "anthropic_retention": false
   }
 }
