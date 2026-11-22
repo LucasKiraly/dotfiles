@@ -1,62 +1,41 @@
-
 [
   {
     "bindings": {
-      // Application
-      "ctrl-k": "zed::Quit"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      // Pane navigation
-      "alt-left": "workspace::ActivatePaneLeft",
-      "alt-right": "workspace::ActivatePaneRight"
+      "ctrl-k": "zed::Quit",
+      "ctrl-t": "terminal_panel::Toggle"
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      // Global navigation
+      "alt-left": "editor::MoveToBeginningOfLine",
+      "alt-right": "editor::MoveToEndOfLine",
       "alt-up": "editor::MoveToBeginning",
       "alt-down": "editor::MoveToEnd",
 
-      // Semantic navigation
       "ctrl-left": "editor::MoveToPreviousWordStart",
       "ctrl-right": "editor::MoveToNextWordEnd",
       "ctrl-up": "editor::MoveToStartOfParagraph",
       "ctrl-down": "editor::MoveToEndOfParagraph",
 
-      // Character selection
       "shift-left": "editor::SelectLeft",
       "shift-right": "editor::SelectRight",
-
-      // Directional selection
       "shift-up": "editor::SelectUp",
       "shift-down": "editor::SelectDown",
 
-      // Semantic selection
-      "ctrl-shift-left": "editor::SelectToPreviousWordStart",
-      "ctrl-shift-right": "editor::SelectToNextWordEnd",
-
-      // Syntax-aware selection
-      "ctrl-shift-up": "editor::SelectSmallerSyntaxNode",
-      "ctrl-shift-down": "editor::SelectLargerSyntaxNode",
-
-      // Structural transformation
+      "alt-shift-left": "editor::SelectToBeginningOfLine",
+      "alt-shift-right": "editor::SelectToEndOfLine",
       "alt-shift-up": "editor::MoveLineUp",
       "alt-shift-down": "editor::MoveLineDown",
 
-      // Code navigation
+      "ctrl-shift-left": "editor::SelectToPreviousWordStart",
+      "ctrl-shift-right": "editor::SelectToNextWordEnd",
+      "ctrl-shift-up": "editor::SelectSmallerSyntaxNode",
+      "ctrl-shift-down": "editor::SelectLargerSyntaxNode",
+
       "ctrl-d": "editor::GoToDefinition",
-
-      // Documentation
       "ctrl-q": "editor::Hover",
-
-      // Multiple selections
-      "ctrl-shift-d": "editor::SelectNext",
-
-      // Refactoring
+      "ctrl-shift-n": "editor::SelectNext",
       "f2": "editor::Rename"
     }
   }
