@@ -1,9 +1,8 @@
 {
-  "edit_predictions": {
-    "mode": "subtle"
-  },
   "cli_default_open_behavior": "new_window",
   "base_keymap": "Zed",
+  "autosave": "on_window_change",
+
   "telemetry": {
     "metrics": false,
     "diagnostics": false,
@@ -27,8 +26,6 @@
   "scrollbar": {
     "show": "never"
   },
-
-  "autosave": "on_window_change",
 
   "project_panel": {
     "default_width": 320.0,
