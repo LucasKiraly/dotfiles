@@ -7,7 +7,7 @@
     "anthropic_retention": false
   },
 
-  "theme": "Catppuccin Mocha (Blur) [Heavy]",
+  "theme": "Catppuccin Latte",
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 26.0,
   "ui_font_family": "IBM Plex Sans",
@@ -34,7 +34,8 @@
   },
   "terminal": {
     "dock": "right",
-    "default_width": 800.0,
+    "flexible": false,
+    "default_width": 1950.0,
     "font_size": 23.0
   },
 
