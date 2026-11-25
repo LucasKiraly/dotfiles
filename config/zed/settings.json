@@ -1,4 +1,7 @@
 {
+  "edit_predictions": {
+    "mode": "subtle"
+  },
   "cli_default_open_behavior": "new_window",
   "base_keymap": "Zed",
   "telemetry": {
@@ -35,7 +38,7 @@
   "terminal": {
     "dock": "right",
     "flexible": false,
-    "default_width": 1950.0,
+    "default_width": 1720.0,
     "font_size": 23.0
   },
 
