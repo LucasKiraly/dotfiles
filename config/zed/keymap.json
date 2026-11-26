@@ -1,42 +1,28 @@
 [
   {
+    "context": "Workspace",
     "bindings": {
-      "ctrl-k": "zed::Quit",
-      "ctrl-t": "terminal_panel::Toggle"
+      "alt-super-j": "terminal_panel::Toggle",
+      "ctrl-super-j": "workspace::NewTerminal",
+      "alt-super-k": "agent::Toggle",
+      "ctrl-super-k": "agent::NewThread",
+      "alt-super-l": "multi_workspace::ToggleWorkspaceSidebar",
+      "ctrl-super-l": "agents_sidebar::ToggleThreadHistory"
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-left": "editor::MoveToBeginningOfLine",
-      "alt-right": "editor::MoveToEndOfLine",
-      "alt-up": "editor::MoveToBeginning",
-      "alt-down": "editor::MoveToEnd",
-
-      "ctrl-left": "editor::MoveToPreviousWordStart",
-      "ctrl-right": "editor::MoveToNextWordEnd",
       "ctrl-up": "editor::MoveToStartOfParagraph",
       "ctrl-down": "editor::MoveToEndOfParagraph",
 
-      "shift-left": "editor::SelectLeft",
-      "shift-right": "editor::SelectRight",
-      "shift-up": "editor::SelectUp",
-      "shift-down": "editor::SelectDown",
-
       "alt-shift-left": "editor::SelectToBeginningOfLine",
       "alt-shift-right": "editor::SelectToEndOfLine",
-      "alt-shift-up": "editor::MoveLineUp",
-      "alt-shift-down": "editor::MoveLineDown",
 
       "ctrl-shift-left": "editor::SelectToPreviousWordStart",
       "ctrl-shift-right": "editor::SelectToNextWordEnd",
-      "ctrl-shift-up": "editor::SelectSmallerSyntaxNode",
-      "ctrl-shift-down": "editor::SelectLargerSyntaxNode",
-
-      "ctrl-d": "editor::GoToDefinition",
-      "ctrl-q": "editor::Hover",
-      "ctrl-shift-n": "editor::SelectNext",
-      "f2": "editor::Rename"
+      "ctrl-shift-up": "editor::SelectLargerSyntaxNode",
+      "ctrl-shift-down": "editor::SelectSmallerSyntaxNode"
     }
   }
 ]
