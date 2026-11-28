@@ -1,39 +1,42 @@
 {
-  "cli_default_open_behavior": "new_window",
+  // General & Privacy
   "base_keymap": "Zed",
   "autosave": "on_window_change",
-
+  "cli_default_open_behavior": "new_window",
   "telemetry": {
     "metrics": false,
     "diagnostics": false,
     "anthropic_retention": false
   },
 
-  "theme": "Everforest Dark Hard (blur)",
-  "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 25.0,
+  // Appearance & Typography
+  "theme": "Tokyo Night",
   "ui_font_family": "IBM Plex Sans",
   "ui_font_size": 23.0,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 25.0,
   "agent_ui_font_size": 21.0,
   "agent_buffer_font_size": 23.0,
 
-  "max_tabs": 3,
+  // Interface
+  "title_bar": {
+    "show_project_items": false,
+    "show_branch_name": false,
+    "show_sign_in": false
+  },
   "tab_bar": {
     "show": false,
     "show_nav_history_buttons": false
   },
+  "max_tabs": 3,
   "toolbar": {
     "quick_actions": false
   },
   "scrollbar": {
     "show": "never"
   },
-  "title_bar": {
-    "show_project_items": false,
-    "show_branch_name": false,
-    "show_sign_in": false
-  },
 
+  // Panels
   "project_panel": {
     "dock": "left",
     "starts_open": false,
@@ -47,6 +50,8 @@
     "default_width": 1720.0,
     "font_size": 23.0
   },
+
+  // Agent
   "agent": {
     "dock": "right",
     "flexible": false,
@@ -56,14 +61,26 @@
       "default_width": 320.0
     }
   },
+  "agent_servers": {
+    "antigravity-acp": {
+      "type": "registry",
+      "default_config_options": {
+        "model": "gemini-4-neon",
+        "mode": "default",
+        "thinking_level": "medium"
+      }
+    }
+  },
 
+  // Editor
+  "show_wrap_guides": false,
   "git": {
     "inline_blame": {
       "enabled": false
     }
   },
 
-  "show_wrap_guides": false,
+  // Languages
   "languages": {
     "Python": {
       "language_servers": ["ty", "ruff"],
